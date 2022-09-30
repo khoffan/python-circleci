@@ -13,7 +13,7 @@ jobs:
           name: Run tests
           command: python -m unittest -v
       - persist_to_workspace:
-          root: ~/
+          root: ~/python-circleci
           paths:
             - .
 workflows:
