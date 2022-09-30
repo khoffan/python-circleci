@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-  python: circleci/python@3.6.0
+  python: circleci/python@2.0.3
 
 jobs:
   build_and_test: # this can be any name you choose
@@ -13,7 +13,7 @@ jobs:
           name: Run tests
           command: python -m unittest -v
       - persist_to_workspace:
-          root: ~/python-circleci
+          root: ~/
           paths:
             - .
 workflows:
